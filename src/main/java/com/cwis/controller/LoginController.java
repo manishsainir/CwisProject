@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.cwis.model.UserVO;
+
 
 @Controller
 public class LoginController {
@@ -31,7 +33,7 @@ public class LoginController {
 	@RequestMapping(value = "/user/index", method = RequestMethod.GET)
 	public ModelAndView userIndex() {
 
-		return new ModelAndView("user/index");
+		return new ModelAndView("user/index","userVo",new UserVO());
 	}
 	
 	@RequestMapping(value = "/logout", method = {RequestMethod.POST, RequestMethod.GET})	

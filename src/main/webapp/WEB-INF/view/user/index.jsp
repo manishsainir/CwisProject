@@ -2,7 +2,6 @@
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -247,7 +246,9 @@
 	<section class="content">
 		<div class="row clearfix">
 			<div class="body">
-				<form id="form_validation" method="POST" novalidate="novalidate">
+				<%@taglib prefix="f" uri="http://www.springframework.org/tags/form"%>
+				<f:form id="form_validation" method="post" novalidate="novalidate"
+					action="addUserData" modelAttribute="userVo" enctype="multipart/form-data">
 					<div class="row clearfix">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							</br>
@@ -263,8 +264,9 @@
 										<div class="col-sm-12">
 											<div class="form-group">
 												<div class="form-line">
-													<textarea rows="4" class="form-control no-resize"
-														placeholder="Please type what you want..."></textarea>
+
+													<f:textarea rows="4" class="form-control no-resize"
+														placeholder="Please type what you want..." path="textData"></f:textarea>
 												</div>
 											</div>
 										</div>
@@ -275,38 +277,49 @@
 						</div>
 
 						<div class="col-sm-6">
-							<form action="#">
-								<div class="file-field input-field">
-									<div class="btn">
-										<span>File</span> <input type="file">
-									</div>
-									<div class="file-path-wrapper">
-										<input class="file-path validate" type="text">
-									</div>
+
+							<div class="file-field input-field">
+								<div class="btn">
+									<span>File</span> <input type="file" name="file" multiple="multiple">
 								</div>
-							</form>
+								<div class="file-path-wrapper">
+									<input class="file-path validate" type="text">
+								</div>
+							</div>
+
 						</div>
+						<div class="col-md-3">
+							<label>Select Your Encryption technique</label>
+							<f:select class="browser-default" path="algoType">
+								<f:option value="">Choose your
+									option</f:option>
+								<f:option value="1">AES</f:option>
+								<f:option value="2">DES</f:option>
+
+							</f:select>
+						</div>
+
 
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<h2>
 								<strong>upload image</strong>
 							</h2>
 							<div>
-								<form action="#">
-									<div class="file-field input-field">
-										<div class="btn">
-											<span>Image</span> <input type="file">
-										</div>
-										<div class="file-path-wrapper">
-											<input class="file-path validate" type="text">
-										</div>
+								<div class="file-field input-field">
+									<div class="btn">
+										<span>Image</span> <input type="file" name="file" multiple="multiple">
 									</div>
-								</form>
+									<div class="file-path-wrapper">
+										<input class="file-path validate" type="text">
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<button type="submit" class="btn btn-info waves-effect">Submit</button>
-				</form>
+					<input type="submit" class="btn btn-info waves-effect" value="Submit">
+					
+					<!-- <button type="submit" class="btn btn-info waves-effect">Submit</button> -->
+				</f:form>
 			</div>
 		</div>
 	</section>

@@ -338,8 +338,13 @@
 													style="width: 500px;">Description</th>
 												<th class="sorting" tabindex="0" aria-controls="tableExport"
 													rowspan="1" colspan="1"
+													aria-label="Salary: activate to sort column ascending"
+													style="width: 76px;">Complaint Time</th>
+												<th class="sorting" tabindex="0" aria-controls="tableExport"
+													rowspan="1" colspan="1"
 													aria-label="Start date: activate to sort column ascending"
 													style="width: 104px;">Reply</th>
+
 												<th class="sorting" tabindex="0" aria-controls="tableExport"
 													rowspan="1" colspan="1"
 													aria-label="Salary: activate to sort column ascending"
@@ -354,6 +359,7 @@
 													<td>${i.loginVO.username }</td>
 													<td>${i.subject }</td>
 													<td>${i.description }</td>
+													<td>${i.complaintTime }</td>
 													<td><a
 														href="replyComplaint?username=${i.loginVO.username }">Reply</a></td>
 													<td><div class="form-group form-float">
@@ -363,7 +369,6 @@
 															</div>
 														</div></td>
 												</tr>
-
 											</tbody>
 										</c:forEach>
 									</table>

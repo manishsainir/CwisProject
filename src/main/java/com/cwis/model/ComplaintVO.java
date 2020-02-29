@@ -24,6 +24,18 @@ public class ComplaintVO {
 	@Column(name = "description")
 	private String description;
 
+	@Column(name = "complaintStatus")
+	private String complaintStatus;
+
+	@Column(name = "complaintTime")
+	private String complaintTime;
+
+	@Column(name = "reply")
+	private String reply;
+
+	@Column(name = "replyTime")
+	private String replyTime;
+
 	@Column(name = "status")
 	private boolean status;
 
@@ -69,6 +81,38 @@ public class ComplaintVO {
 
 	public void setLoginVO(LoginVO loginVO) {
 		this.loginVO = loginVO;
+	}
+
+	public String getComplaintStatus() {
+		return complaintStatus;
+	}
+
+	public void setComplaintStatus(String complaintStatus) {
+		this.complaintStatus = complaintStatus;
+	}
+
+	public String getComplaintTime() {
+		return complaintTime;
+	}
+
+	public void setComplaintTime(String complaintTime) {
+		this.complaintTime = complaintTime;
+	}
+
+	public String getReply() {
+		return reply;
+	}
+
+	public void setReply(String reply) {
+		this.reply = reply;
+	}
+
+	public String getReplyTime() {
+		return replyTime;
+	}
+
+	public void setReplyTime(String replyTime) {
+		this.replyTime = replyTime;
 	}
 
 }

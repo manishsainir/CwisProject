@@ -1,5 +1,6 @@
 package com.cwis.controller;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +35,9 @@ public class ComplaintController {
 	public ModelAndView insertComplaint(@ModelAttribute ComplaintVO complaintVO) {
 		List list = this.loginService.searchLoginID(Basemethods.getUser());
 		complaintVO.setLoginVO((LoginVO) list.get(0));
+		complaintVO.setComplaintStatus("panding");
+		complaintVO.setReply("panding");
+		complaintVO.setComplaintTime(new Date().toString());
 		this.complaintService.insert(complaintVO);
 		return new ModelAndView("redirect:/user/addComplaint");
 	}
