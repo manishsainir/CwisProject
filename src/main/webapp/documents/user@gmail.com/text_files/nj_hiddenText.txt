@@ -1,0 +1,75 @@
+GUJARAT TECHNOLOGICAL UNIVERSITY
+(GTU)
+INNOVATION COUNCIL (GIC)
+Patent Search & Analysis Report
+(PSAR)
+Date of Submission : 13/10/2019
+Dear Patel Prinshu Manojprasad,
+Studied Patent Number for generation of PSAR : 19BE7_160160109070_2
+PART 1: PATENT SEARCH DATABASE USED
+1. Patent Search Database used : Google Patents
+Web link of database : https://patents.google.com/
+2. Keywords Used for Search : GSM,MONITORING,SUBSTATION
+3. Search String Used : ((((GSM) AND (MONITORING))) OR (FOR SUBSTATION))
+4. Number of Results/Hits getting : 8889
+PART 2: BASIC DATA OF PATENTED INVENTION /BIBLIOGRAPHIC DATA
+5. Category/ Field of Invention :
+6. Invention is Related to/Class of Invention : GSM BASED
+6 (a) : IPC class of the studied patent : HO2J 13/00
+7. Title of Invention : On-line monitoring system for transmission line fault
+8. Patent No. : CN1547306A
+9. Application Number : CNA2003101093293A
+9 (a) : Web link of the studied patent : https://patents.google.com/patent/CN1547306A/en?q=((GSM)+AN
+D+(MONITORING)),FOR+SUBSTATION
+10. Date of Filing/Application (DD/MM/YYYY) : 12/12/2003
+11. Priority Date (DD/MM/YYYY) :
+12. Publication/Journal Number :
+13. Publication Date (DD/MM/YYYY) :
+14. First Filled Country : Albania :
+Page 1
+15. Also Published as
+Sr.No Country Where Filled Application No./Patent No.
+1
+16. Inventor/s Details.
+Sr.No Name of Inventor Address/City/Country of Inventor
+1 Huang Xiandong CHINA
+17. Applicant/Assignee Details.
+Sr.No Name of Applicant/Assignee Address/City/Country of Applicant
+1 Shanghai Dongyun IT Development Co Ltd CHINA
+18. Applicant for Patent is : Company
+PART 3: TECHNICAL PART OF PATENTED INVENTION
+19. Limitation of Prior Technology / Art
+The invention is a kind online supervising system for electricity cable failure, which is mainly used in the failure detection of the cable in electric
+system. It includes a data collecting end and failure monitoring and maintaining system. The data collecting ends is set on the pole for setting
+the electric cables
+20. Specific Problem Solved / Objective of Invention
+The data collected by the collecting end is transmitted to the primary control station of the supervising supporting system with message type
+through the mobile communication network. The primary control station receives the message and completes the alarming, display and system
+diagnosis, maintenance, query and data transmitting, and printing and son on. The detecting speed is quick, the localization is accurate and
+reliable, the operation is convenient.
+21. Brief about Invention
+Monitoring system of the present invention, significant advantages are: data acquisition upward and downward by SMS message delivery with
+the mobile communication network between a master station and the terminal, information about upload from about 20 seconds to complete.
+Thus, upon transmission line failure, the master fault monitoring support system of the present invention is less than 30 seconds standing time
+can be promptly and accurately tell the transmission line fault and operation related art. Thus greatly reducing the burden on the workers of
+transmission line transmission line work, can save a lot of manpower, material resources, speed up locating transmission line fault point, but
+also quickly organize manpower to repair, restore power as quickly as possible, so that failure to reduce the losses to a minimum . Further, the
+size of the transmission line fault current record failure occurs, operation and maintenance personnel can assist damage by the impact of the
+current impact analysis apparatus, when for maintenance, which can improve safety and reliability of operation of transmission lines. Therefore,
+the transmission line fault-line monitoring system of the present invention has a very important role not only safe and reliable power supply for
+the power system, but also bring enormous social and economic benefits to the power system.
+22. Key learning Points
+This patent introduces us a key  factors of GSM based technology that helps us to identify our project wide ideas that are going to implemented
+by us.
+23. Summary of Invention
+The present invention, in order to correctly detect and locate faults in power system transmission line for fast, accurate, and reliable, there is
+provided a power transmission line fault-line monitoring system.
+24. Number of Claims : 10
+25. Patent Status : Published Application
+26. How much this invention is related with your IDP/UDP?
+Page 2
+71 to 90%
+27. Do you have any idea to do anything around the said invention to improve it? (Give short note in not more than 500
+words)
+Not yet ready to do contribution.
+Page 3
