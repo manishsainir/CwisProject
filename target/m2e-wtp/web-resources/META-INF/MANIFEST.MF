@@ -3,8 +3,7 @@ Implementation-Title: cwis
 Implementation-Version: 0.0.1-SNAPSHOT
 Built-By: manish
 Implementation-Vendor-Id: org.cwis.project
-Build-Jdk: 1.8.0_242
-Implementation-URL: http://projects.spring.io/spring-boot/cwis/
+Build-Jdk: 1.8.0_252
 Created-By: Maven Integration for Eclipse
 Implementation-Vendor: Pivotal Software, Inc.
 
