@@ -94,16 +94,15 @@
                 <tags>categoryTag:Java Browsing</tags>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_gro-FpJkEeqSLpRe6c9ieg" containerData="7500" selectedElement="_gro-F5JkEeqSLpRe6c9ieg">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_gro-F5JkEeqSLpRe6c9ieg" containerData="7000" selectedElement="_gro-GZJkEeqSLpRe6c9ieg" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_gro-FpJkEeqSLpRe6c9ieg" containerData="7500" selectedElement="_gro-HZJkEeqSLpRe6c9ieg">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_gro-F5JkEeqSLpRe6c9ieg" containerData="7000" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_gro-GJJkEeqSLpRe6c9ieg" elementId="org.eclipse.ui.editorss" containerData="7303" ref="_gRv3YJJkEeqSLpRe6c9ieg"/>
-                <children xsi:type="basic:PartStack" xmi:id="_gro-GZJkEeqSLpRe6c9ieg" elementId="topRight" containerData="2697" selectedElement="_gro-GpJkEeqSLpRe6c9ieg">
-                  <tags>active</tags>
-                  <children xsi:type="advanced:Placeholder" xmi:id="_gro-GpJkEeqSLpRe6c9ieg" elementId="org.eclipse.ui.views.ContentOutline" ref="_grTm4JJkEeqSLpRe6c9ieg" closeable="true">
+                <children xsi:type="basic:PartStack" xmi:id="_gro-GZJkEeqSLpRe6c9ieg" elementId="topRight" toBeRendered="false" containerData="2697">
+                  <children xsi:type="advanced:Placeholder" xmi:id="_gro-GpJkEeqSLpRe6c9ieg" elementId="org.eclipse.ui.views.ContentOutline" toBeRendered="false" ref="_grTm4JJkEeqSLpRe6c9ieg" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:General</tags>
                   </children>
-                  <children xsi:type="advanced:Placeholder" xmi:id="_gro-G5JkEeqSLpRe6c9ieg" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" ref="_grWDIJJkEeqSLpRe6c9ieg" closeable="true">
+                  <children xsi:type="advanced:Placeholder" xmi:id="_gro-G5JkEeqSLpRe6c9ieg" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" toBeRendered="false" ref="_grWDIJJkEeqSLpRe6c9ieg" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:Mylyn</tags>
                   </children>
@@ -114,6 +113,7 @@
                 </children>
               </children>
               <children xsi:type="basic:PartStack" xmi:id="_gro-HZJkEeqSLpRe6c9ieg" elementId="bottomRight" containerData="3000" selectedElement="_gro-HpJkEeqSLpRe6c9ieg">
+                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_gro-HpJkEeqSLpRe6c9ieg" elementId="org.eclipse.ui.views.AllMarkersView" ref="_grDIMJJkEeqSLpRe6c9ieg" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:General</tags>
@@ -244,6 +244,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.allSeverityField&quot; categoryGroup=&quot;org.eclipse.ui.ide.type&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.allMarkersGenerator&quot; partName=&quot;Markers&quot;>&#xA;&lt;columnWidths org.eclipse.ui.ide.allSeverityField=&quot;350&quot; org.eclipse.ui.ide.locationField=&quot;105&quot; org.eclipse.ui.ide.markerType=&quot;658&quot; org.eclipse.ui.ide.pathField=&quot;140&quot; org.eclipse.ui.ide.resourceField=&quot;105&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.allSeverityField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_hORKAJJkEeqSLpRe6c9ieg" elementId="org.eclipse.ui.views.AllMarkersView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -316,19 +318,23 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_hJzgwJJkEeqSLpRe6c9ieg" elementId="org.eclipse.ui.views.ContentOutline">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_hJzgwZJkEeqSLpRe6c9ieg" elementId="org.eclipse.ui.views.ContentOutline"/>
+      <toolbar xmi:id="_hJzgwZJkEeqSLpRe6c9ieg" elementId="org.eclipse.ui.views.ContentOutline" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_grWDIJJkEeqSLpRe6c9ieg" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Task List" iconURI="platform:/plugin/org.eclipse.mylyn.tasks.ui/icons/eview16/task-list.gif" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.mylyn.internal.tasks.ui.views.TaskListView"/>
       <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.mylyn.tasks.ui"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view linkWithEditor=&quot;true&quot; presentation=&quot;org.eclipse.mylyn.tasks.ui.categorized&quot;>&#xA;&lt;sorter groupBy=&quot;CATEGORY_QUERY&quot;>&#xA;&lt;sorter>&#xA;&lt;sortorg.eclipse.mylyn.tasks.ui.scheduled0 sortDirection=&quot;1&quot; sortKey=&quot;DUE_DATE&quot;/>&#xA;&lt;sortorg.eclipse.mylyn.tasks.ui.scheduled1 sortDirection=&quot;1&quot; sortKey=&quot;SCHEDULED_DATE&quot;/>&#xA;&lt;sortorg.eclipse.mylyn.tasks.ui.scheduled2 sortDirection=&quot;1&quot; sortKey=&quot;PRIORITY&quot;/>&#xA;&lt;sortorg.eclipse.mylyn.tasks.ui.scheduled3 sortDirection=&quot;1&quot; sortKey=&quot;RANK&quot;/>&#xA;&lt;sortorg.eclipse.mylyn.tasks.ui.scheduled4 sortDirection=&quot;1&quot; sortKey=&quot;DATE_CREATED&quot;/>&#xA;&lt;sortorg.eclipse.mylyn.tasks.ui.scheduled5 sortDirection=&quot;1&quot; sortKey=&quot;NONE&quot;/>&#xA;&lt;sortorg.eclipse.mylyn.tasks.ui.scheduled6 sortDirection=&quot;1&quot; sortKey=&quot;NONE&quot;/>&#xA;&lt;sortorg.eclipse.mylyn.tasks.ui.scheduled7 sortDirection=&quot;1&quot; sortKey=&quot;NONE&quot;/>&#xA;&lt;sortorg.eclipse.mylyn.tasks.ui.scheduled8 sortDirection=&quot;1&quot; sortKey=&quot;NONE&quot;/>&#xA;&lt;sortorg.eclipse.mylyn.tasks.ui.categorized0 sortDirection=&quot;1&quot; sortKey=&quot;PRIORITY&quot;/>&#xA;&lt;sortorg.eclipse.mylyn.tasks.ui.categorized1 sortDirection=&quot;1&quot; sortKey=&quot;RANK&quot;/>&#xA;&lt;sortorg.eclipse.mylyn.tasks.ui.categorized2 sortDirection=&quot;1&quot; sortKey=&quot;DATE_CREATED&quot;/>&#xA;&lt;sortorg.eclipse.mylyn.tasks.ui.categorized3 sortDirection=&quot;1&quot; sortKey=&quot;NONE&quot;/>&#xA;&lt;sortorg.eclipse.mylyn.tasks.ui.categorized4 sortDirection=&quot;1&quot; sortKey=&quot;NONE&quot;/>&#xA;&lt;sortorg.eclipse.mylyn.tasks.ui.categorized5 sortDirection=&quot;1&quot; sortKey=&quot;NONE&quot;/>&#xA;&lt;sortorg.eclipse.mylyn.tasks.ui.categorized6 sortDirection=&quot;1&quot; sortKey=&quot;NONE&quot;/>&#xA;&lt;sortorg.eclipse.mylyn.tasks.ui.categorized7 sortDirection=&quot;1&quot; sortKey=&quot;NONE&quot;/>&#xA;&lt;sortorg.eclipse.mylyn.tasks.ui.categorized8 sortDirection=&quot;1&quot; sortKey=&quot;NONE&quot;/>&#xA;&lt;/sorter>&#xA;&lt;/sorter>&#xA;&lt;filteredTreeFindHistory/>&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:Mylyn</tags>
+      <menus xmi:id="_CYzs8MZSEeqEzcTF7QaGNA" elementId="org.eclipse.mylyn.tasks.ui.views.tasks">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_CYzs8cZSEeqEzcTF7QaGNA" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_grjegJJkEeqSLpRe6c9ieg" elementId="org.eclipse.ui.views.minimap.MinimapView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Minimap" iconURI="platform:/plugin/org.eclipse.ui.workbench.texteditor/icons/full/eview16/minimap.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.internal.views.minimap.MinimapView"/>
@@ -343,7 +349,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_gLLVUJJkEeqSLpRe6c9ieg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_Y8e4EJt6EeqL_uelfn4y4A" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_ep1eZ5JkEeqSLpRe6c9ieg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_o6NysMZREeqEzcTF7QaGNA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_ep1eZ5JkEeqSLpRe6c9ieg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_gLLVUZJkEeqSLpRe6c9ieg" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -380,7 +386,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_gLMjcJJkEeqSLpRe6c9ieg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_Y8k-sJt6EeqL_uelfn4y4A" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_epzpMJJkEeqSLpRe6c9ieg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_o6uwEMZREeqEzcTF7QaGNA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_epzpMJJkEeqSLpRe6c9ieg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_gLMjcZJkEeqSLpRe6c9ieg" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -3170,7 +3176,7 @@
   <addons xmi:id="_elnFupJkEeqSLpRe6c9ieg" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_elnFu5JkEeqSLpRe6c9ieg" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_emeoYJJkEeqSLpRe6c9ieg" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_XhVIsJt6EeqL_uelfn4y4A" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_eon9cJJkEeqSLpRe6c9ieg" elementId="org.eclipse.ui.category.edit" name="Edit"/>
   <categories xmi:id="_eookgJJkEeqSLpRe6c9ieg" elementId="org.eclipse.mylyn.wikitext.ui.editor.category" name="WikiText Markup Editing Commands" description="commands for editing lightweight markup"/>

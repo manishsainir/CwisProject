@@ -45,3 +45,267 @@ java.io.FileNotFoundException: /home/manish/WorkSpace/finalProject/cwis/.metadat
 	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2338)
 	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:509)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SESSION 2020-07-15 09:43:22.728 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_252
+java.vendor=Private Build
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.fx.ide.css 4 0 2020-07-15 09:43:27.860
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css [1433]
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.fx.ide.css [osgi.identity; type="osgi.bundle"; version:Version="3.5.0.201907240300"; osgi.identity="org.eclipse.fx.ide.css"; singleton:="true"] because it is exposed to package 'org.apache.log4j.spi' from resources org.apache.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.2.15.v201012070815"; osgi.identity="org.apache.log4j"] and org.slf4j.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.7.2.v20130115-1340"; osgi.identity="org.slf4j.log4j"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.fx.ide.css [osgi.identity; type="osgi.bundle"; version:Version="3.5.0.201907240300"; osgi.identity="org.eclipse.fx.ide.css"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.log4j)(bundle-version>=1.2.15))
+     |
+    provide: osgi.wiring.bundle: org.apache.log4j
+  org.apache.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.2.15.v201012070815"; osgi.identity="org.apache.log4j"]
+
+Chain 2:
+  org.eclipse.fx.ide.css [osgi.identity; type="osgi.bundle"; version:Version="3.5.0.201907240300"; osgi.identity="org.eclipse.fx.ide.css"; singleton:="true"]
+    import: (osgi.wiring.package=org.apache.log4j)
+     |
+    export: osgi.wiring.package: org.apache.log4j; uses:=org.apache.log4j.spi
+    export: osgi.wiring.package=org.apache.log4j.spi
+  org.slf4j.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.7.2.v20130115-1340"; osgi.identity="org.slf4j.log4j"]
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext 4 0 2020-07-15 09:43:28.006
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext [1434]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css; bundle-version="3.5.0.201907240300"; singleton:="true"
+       org.eclipse.fx.ide.css [1433]
+         No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.fx.ide.css.cssext [osgi.identity; type="osgi.bundle"; version:Version="3.5.0.201907240300"; osgi.identity="org.eclipse.fx.ide.css.cssext"; singleton:="true"] because it is exposed to package 'org.apache.log4j.spi' from resources org.apache.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.2.15.v201012070815"; osgi.identity="org.apache.log4j"] and org.slf4j.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.7.2.v20130115-1340"; osgi.identity="org.slf4j.log4j"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.fx.ide.css.cssext [osgi.identity; type="osgi.bundle"; version:Version="3.5.0.201907240300"; osgi.identity="org.eclipse.fx.ide.css.cssext"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.fx.ide.css)(bundle-version>=2.3.0))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.fx.ide.css
+  org.apache.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.2.15.v201012070815"; osgi.identity="org.apache.log4j"]
+
+Chain 2:
+  org.eclipse.fx.ide.css.cssext [osgi.identity; type="osgi.bundle"; version:Version="3.5.0.201907240300"; osgi.identity="org.eclipse.fx.ide.css.cssext"; singleton:="true"]
+    import: (osgi.wiring.package=org.apache.log4j)
+     |
+    export: osgi.wiring.package: org.apache.log4j; uses:=org.apache.log4j.spi
+    export: osgi.wiring.package=org.apache.log4j.spi
+  org.slf4j.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.7.2.v20130115-1340"; osgi.identity="org.slf4j.log4j"]
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.proposals 4 0 2020-07-15 09:43:28.205
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.proposals [1435]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.5.0.201907240300"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [1434]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.ide.css; bundle-version="3.5.0.201907240300"; singleton:="true"
+              org.eclipse.fx.ide.css [1433]
+                No resolution report for the bundle.  Unresolved requirement: Import-Package: org.eclipse.fx.ide.css.ui.extapi
+    -> Export-Package: org.eclipse.fx.ide.css.ui.extapi; bundle-symbolic-name="org.eclipse.fx.ide.css.ui"; bundle-version="3.5.0.201907240300"; version="0.0.0"; x-internal:="true"
+       org.eclipse.fx.ide.css.ui [1439]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css; bundle-version="2.3.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.fx.ide.css; bundle-version="3.5.0.201907240300"; singleton:="true"
+  Unresolved requirement: Import-Package: org.eclipse.fx.ide.css.extapi
+    -> Export-Package: org.eclipse.fx.ide.css.extapi; bundle-symbolic-name="org.eclipse.fx.ide.css"; bundle-version="3.5.0.201907240300"; version="0.0.0"; x-friends:="org.eclipse.fx.ide.css.ui"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.fx.ide.css [osgi.identity; type="osgi.bundle"; version:Version="3.5.0.201907240300"; osgi.identity="org.eclipse.fx.ide.css"; singleton:="true"] because it is exposed to package 'org.apache.log4j.spi' from resources org.apache.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.2.15.v201012070815"; osgi.identity="org.apache.log4j"] and org.slf4j.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.7.2.v20130115-1340"; osgi.identity="org.slf4j.log4j"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.fx.ide.css [osgi.identity; type="osgi.bundle"; version:Version="3.5.0.201907240300"; osgi.identity="org.eclipse.fx.ide.css"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.log4j)(bundle-version>=1.2.15))
+     |
+    provide: osgi.wiring.bundle: org.apache.log4j
+  org.apache.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.2.15.v201012070815"; osgi.identity="org.apache.log4j"]
+
+Chain 2:
+  org.eclipse.fx.ide.css [osgi.identity; type="osgi.bundle"; version:Version="3.5.0.201907240300"; osgi.identity="org.eclipse.fx.ide.css"; singleton:="true"]
+    import: (osgi.wiring.package=org.apache.log4j)
+     |
+    export: osgi.wiring.package: org.apache.log4j; uses:=org.apache.log4j.spi
+    export: osgi.wiring.package=org.apache.log4j.spi
+  org.slf4j.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.7.2.v20130115-1340"; osgi.identity="org.slf4j.log4j"]
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.ui 4 0 2020-07-15 09:43:28.346
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.ui [1436]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.5.0.201907240300"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [1434]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.ide.css; bundle-version="3.5.0.201907240300"; singleton:="true"
+              org.eclipse.fx.ide.css [1433]
+                No resolution report for the bundle.  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.ui; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.ui; bundle-version="3.5.0.201907240300"; singleton:="true"
+       org.eclipse.fx.ide.css.ui [1439]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css; bundle-version="2.3.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.fx.ide.css; bundle-version="3.5.0.201907240300"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.fx.ide.css.cssext.ui [osgi.identity; type="osgi.bundle"; version:Version="3.5.0.201907240300"; osgi.identity="org.eclipse.fx.ide.css.cssext.ui"; singleton:="true"] because it is exposed to package 'org.apache.log4j.spi' from resources org.apache.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.2.15.v201012070815"; osgi.identity="org.apache.log4j"] and org.slf4j.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.7.2.v20130115-1340"; osgi.identity="org.slf4j.log4j"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.fx.ide.css.cssext.ui [osgi.identity; type="osgi.bundle"; version:Version="3.5.0.201907240300"; osgi.identity="org.eclipse.fx.ide.css.cssext.ui"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.fx.ide.css.ui)(bundle-version>=2.3.0))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.fx.ide.css.ui
+  org.apache.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.2.15.v201012070815"; osgi.identity="org.apache.log4j"]
+
+Chain 2:
+  org.eclipse.fx.ide.css.cssext.ui [osgi.identity; type="osgi.bundle"; version:Version="3.5.0.201907240300"; osgi.identity="org.eclipse.fx.ide.css.cssext.ui"; singleton:="true"]
+    import: (osgi.wiring.package=org.apache.log4j)
+     |
+    export: osgi.wiring.package: org.apache.log4j; uses:=org.apache.log4j.spi
+    export: osgi.wiring.package=org.apache.log4j.spi
+  org.slf4j.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.7.2.v20130115-1340"; osgi.identity="org.slf4j.log4j"]
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.ui 4 0 2020-07-15 09:43:28.515
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.ui [1439]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css; bundle-version="2.3.0"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css; bundle-version="3.5.0.201907240300"; singleton:="true"
+       org.eclipse.fx.ide.css [1433]
+         No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.fx.ide.css.ui [osgi.identity; type="osgi.bundle"; version:Version="3.5.0.201907240300"; osgi.identity="org.eclipse.fx.ide.css.ui"; singleton:="true"] because it is exposed to package 'org.apache.log4j.spi' from resources org.apache.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.2.15.v201012070815"; osgi.identity="org.apache.log4j"] and org.slf4j.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.7.2.v20130115-1340"; osgi.identity="org.slf4j.log4j"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.fx.ide.css.ui [osgi.identity; type="osgi.bundle"; version:Version="3.5.0.201907240300"; osgi.identity="org.eclipse.fx.ide.css.ui"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.fx.ide.css)(bundle-version>=2.3.0))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.fx.ide.css
+  org.apache.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.2.15.v201012070815"; osgi.identity="org.apache.log4j"]
+
+Chain 2:
+  org.eclipse.fx.ide.css.ui [osgi.identity; type="osgi.bundle"; version:Version="3.5.0.201907240300"; osgi.identity="org.eclipse.fx.ide.css.ui"; singleton:="true"]
+    import: (osgi.wiring.package=org.apache.log4j)
+     |
+    export: osgi.wiring.package: org.apache.log4j; uses:=org.apache.log4j.spi
+    export: osgi.wiring.package=org.apache.log4j.spi
+  org.slf4j.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.7.2.v20130115-1340"; osgi.identity="org.slf4j.log4j"]
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.fxgraph 4 0 2020-07-15 09:43:28.623
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.fxgraph [1440]
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.fx.ide.fxgraph [osgi.identity; type="osgi.bundle"; version:Version="3.5.0.201907240300"; osgi.identity="org.eclipse.fx.ide.fxgraph"; singleton:="true"] because it is exposed to package 'org.apache.log4j.spi' from resources org.apache.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.2.15.v201012070815"; osgi.identity="org.apache.log4j"] and org.slf4j.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.7.2.v20130115-1340"; osgi.identity="org.slf4j.log4j"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.fx.ide.fxgraph [osgi.identity; type="osgi.bundle"; version:Version="3.5.0.201907240300"; osgi.identity="org.eclipse.fx.ide.fxgraph"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.log4j)(bundle-version>=1.2.15))
+     |
+    provide: osgi.wiring.bundle: org.apache.log4j
+  org.apache.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.2.15.v201012070815"; osgi.identity="org.apache.log4j"]
+
+Chain 2:
+  org.eclipse.fx.ide.fxgraph [osgi.identity; type="osgi.bundle"; version:Version="3.5.0.201907240300"; osgi.identity="org.eclipse.fx.ide.fxgraph"; singleton:="true"]
+    import: (osgi.wiring.package=org.apache.log4j)
+     |
+    export: osgi.wiring.package: org.apache.log4j; uses:=org.apache.log4j.spi
+    export: osgi.wiring.package=org.apache.log4j.spi
+  org.slf4j.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.7.2.v20130115-1340"; osgi.identity="org.slf4j.log4j"]
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.fxgraph.ui 4 0 2020-07-15 09:43:28.723
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.fxgraph.ui [1441]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.fxgraph; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.fxgraph; bundle-version="3.5.0.201907240300"; singleton:="true"
+       org.eclipse.fx.ide.fxgraph [1440]
+         No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.fx.ide.fxgraph.ui [osgi.identity; type="osgi.bundle"; version:Version="3.5.0.201907240300"; osgi.identity="org.eclipse.fx.ide.fxgraph.ui"; singleton:="true"] because it is exposed to package 'org.apache.log4j.spi' from resources org.apache.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.2.15.v201012070815"; osgi.identity="org.apache.log4j"] and org.slf4j.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.7.2.v20130115-1340"; osgi.identity="org.slf4j.log4j"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.fx.ide.fxgraph.ui [osgi.identity; type="osgi.bundle"; version:Version="3.5.0.201907240300"; osgi.identity="org.eclipse.fx.ide.fxgraph.ui"; singleton:="true"]
+    require: (osgi.wiring.bundle=org.eclipse.fx.ide.fxgraph)
+     |
+    provide: osgi.wiring.bundle: org.eclipse.fx.ide.fxgraph
+  org.apache.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.2.15.v201012070815"; osgi.identity="org.apache.log4j"]
+
+Chain 2:
+  org.eclipse.fx.ide.fxgraph.ui [osgi.identity; type="osgi.bundle"; version:Version="3.5.0.201907240300"; osgi.identity="org.eclipse.fx.ide.fxgraph.ui"; singleton:="true"]
+    import: (osgi.wiring.package=org.apache.log4j)
+     |
+    export: osgi.wiring.package: org.apache.log4j; uses:=org.apache.log4j.spi
+    export: osgi.wiring.package=org.apache.log4j.spi
+  org.slf4j.log4j [osgi.identity; type="osgi.bundle"; version:Version="1.7.2.v20130115-1340"; osgi.identity="org.slf4j.log4j"]
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
