@@ -33,7 +33,6 @@ com/cwis/dao/RegisterDAOImp.class
 com/cwis/controller/LoginController.class
 com/cwis/HibernateConfiguration.class
 com/cwis/service/FeedbackServiceImp.class
-com/cwis/Application.class
 com/cwis/api/Steganography.class
 com/cwis/controller/RegisterController.class
 com/cwis/utils/Basemethods.class
